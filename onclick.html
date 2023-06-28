@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>onclick</title>
+  </head>
+  <body>
+    <button onclick="sayHello()">안녕</button>
+    <button onclick="showAlert()">경고</button>
+    <!-- 글자 불러오기 -->
+    <button onclick="showElement()">보이고</button>
+    <button onclick="hideElement()">가리기</button>
+    <div id="myElement" style="display: none">
+      이 요소를 보이기/가리기 합니다.
+    </div>
+    <!-- 이미지 불러오기 -->
+    <button onclick="showImage()">하이</button>
+    <button onclick="hideImage()">바이</button>
+    <img id="myImage" src="images/고양이.jpg" alt="고양이" style="display: none" />
+    <!-- sayHello, showAlert.......는 내가 지은 이름임 -->
+    <script>
+      function sayHello() {
+        console.log("안녕하세요!");
+      }
+      function showAlert() {
+        alert("하이루");
+      }
+
+      function showElement() {
+        const element = document.getElementById("myElement");
+        element.style.display = "block";
+      }
+      // 글자 불러오기
+      function hideElement() {
+        const element = document.getElementById("myElement");
+        element.style.display = "none";
+      }
+
+      function showImage() {
+        const image = document.getImage("");
+        element.style.display = "";
+      }
+
+      // 이미지 불러오기
+      function showImage() {
+        const image = document.getElementById("myImage");
+        image.style.display = "block";
+      }
+
+      function hideImage() {
+        const image = document.getElementById("myImage");
+        image.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
